@@ -29,6 +29,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
+          tags: ${{secrets.ACR_NAME}}.azurecr.io/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
 
           
